@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJ Cost Record Management System</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Top Header Navigation -->
+    <header class="app-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="brand-icon"><i class="fa-solid fa-calculator"></i></div>
+                <div class="brand-text">
+                    <h1>PJ Cost Record</h1>
+                    <span class="sub-title">Project Financial Management System</span>
+                </div>
+            </div>
+            
+            <nav class="nav-tabs">
+                <button class="nav-btn active" data-tab="dashboard-tab">
+                    <i class="fa-solid fa-chart-pie"></i> Dashboard
+                </button>
+                <button class="nav-btn" data-tab="projects-tab">
+                    <i class="fa-solid fa-list-check"></i> Projects List
+                </button>
+                <button class="nav-btn" data-tab="forecast-tab">
+                    <i class="fa-solid fa-money-bill-trend-up"></i> Money Forecast
+                </button>
+                <button class="nav-btn" data-tab="formulas-tab">
+                    <i class="fa-solid fa-code"></i> Formulas Sandbox
+                </button>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-secondary btn-sm" id="btn-sync-excel" title="Reload from Excel file">
+                    <i class="fa-solid fa-rotate"></i> Sync Excel
+                </button>
+                <button class="btn btn-primary btn-sm" id="btn-new-project">
+                    <i class="fa-solid fa-plus"></i> New Project
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="app-main">
+        <!-- 1. DASHBOARD TAB -->
+        <section id="dashboard-tab" class="tab-content active">
+            <!-- Metric KPI Summary Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card purple">
+                    <div class="kpi-icon"><i class="fa-solid fa-folder-open"></i></div>
+                    <div class="kpi-body">
+                        <span class="kpi-title">Total Projects</span>
+                        <h2 class="kpi-value" id="kpi-total-projects">0</h2>
+                        <span class="kpi-sub" id="kpi-status-breakdown">In Progress: 0 | Completed: 0</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card blue">
+                    <div class="kpi-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <div class="kpi-body">
+                        <span class="kpi-title">Total Contract Value</span>
+                        <h2 class="kpi-value" id="kpi-total-contract">฿0.00</h2>
+                        <span class="kpi-sub">Combined Quotation Prices</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card orange">
+                    <div class="kpi-icon"><i class="fa-solid fa-receipt"></i></div>
+                    <div class="kpi-body">
+                        <span class="kpi-title">Actual Costs Spent</span>
+                        <h2 class="kpi-value" id="kpi-total-expenses">฿0.00</h2>
+                        <span class="kpi-sub" id="kpi-budget-comparison">Total Budget: ฿0.00</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card green">
+                    <div class="kpi-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="kpi-body">
+                        <span class="kpi-title">Total Gross Profit</span>
+                        <h2 class="kpi-value" id="kpi-gross-profit">฿0.00</h2>
+                        <span class="kpi-badge" id="kpi-profit-pct">0% Margin</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3><i class="fa-solid fa-chart-column"></i> Financial Performance (Contract vs Budget vs Actual)</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="financialChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Expense Breakdown by JPP Category</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Profitable Projects & Recent Activity -->
+            <div class="dashboard-row">
+                <div class="card card-table">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-trophy"></i> Top Profitable Projects</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Job Code</th>
+                                    <th>Project Name</th>
+                                    <th>Client</th>
+                                    <th>Contract Price</th>
+                                    <th>Gross Profit</th>
+                                    <th>Profit %</th>
+                                </tr>
+                            </thead>
+                            <tbody id="top-projects-tbody">
+                                <!-- Rendered dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PROJECTS LIST TAB -->
+        <section id="projects-tab" class="tab-content">
+            <!-- Filter & Search Control Bar -->
+            <div class="control-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search Job Code, Client, Project Name...">
+                </div>
+
+                <div class="filter-group">
+                    <select id="status-filter" class="form-select">
+                        <option value="">All Statuses</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+
+                    <select id="client-filter" class="form-select">
+                        <option value="">All Clients</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Projects Master Table -->
+            <div class="card card-table">
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Job Code</th>
+                                <th>Project & Client</th>
+                                <th>Contract Price</th>
+                                <th>Budget Price</th>
+                                <th>Actual Cost</th>
+                                <th>Gross Profit</th>
+                                <th>Profit %</th>
+                                <th>Status</th>
+                                <th class="text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projects-tbody">
+                            <!-- Rendered dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MONEY FORECAST TAB -->
+        <section id="forecast-tab" class="tab-content">
+            <div class="card card-table">
+                <div class="card-header">
+                    <h3><i class="fa-solid fa-money-bill-transfer"></i> Cashflow Money Forecast</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Description / Item</th>
+                                <th>Target Date</th>
+                                <th>Month 1</th>
+                                <th>Month 2</th>
+                                <th>Month 3</th>
+                                <th>Month 4</th>
+                                <th>Total Forecast</th>
+                            </tr>
+                        </thead>
+                        <tbody id="forecast-tbody">
+                            <!-- Rendered dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FORMULAS SANDBOX TAB -->
+        <section id="formulas-tab" class="tab-content">
+            <div class="sandbox-container">
+                <div class="card sandbox-card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-calculator"></i> Interactive Sheet Formula Simulator</h3>
+                        <p class="subtitle">Test how Excel sheet formulas are translated to JavaScript & Python functions</p>
+                    </div>
+                    
+                    <div class="sandbox-grid">
+                        <div class="sandbox-input-panel">
+                            <h4>Formula Inputs</h4>
+                            <div class="form-group">
+                                <label>Contract Price (฿)</label>
+                                <input type="number" id="sb-contract" value="66000" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Budget Price (฿)</label>
+                                <input type="number" id="sb-budget" value="56000" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Actual Expense (฿)</label>
+                                <input type="number" id="sb-expense" value="42000" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Incentive Rate (%)</label>
+                                <input type="number" id="sb-rate" value="25" class="form-control">
+                            </div>
+                            <button class="btn btn-primary w-100" id="btn-run-formula">
+                                <i class="fa-solid fa-play"></i> Run Calculations
+                            </button>
+                        </div>
+
+                        <div class="sandbox-output-panel">
+                            <h4>Calculated Outputs</h4>
+                            <div class="formula-result-grid">
+                                <div class="res-box">
+                                    <span class="res-label">Budget Profit %:</span>
+                                    <strong class="res-val" id="res-budget-profit-pct">0%</strong>
+                                    <code class="res-code">=(Contract - Budget) / Contract</code>
+                                </div>
+                                <div class="res-box">
+                                    <span class="res-label">Actual Gross Profit:</span>
+                                    <strong class="res-val" id="res-gross-profit">฿0</strong>
+                                    <code class="res-code">=Contract - Actual_Expense</code>
+                                </div>
+                                <div class="res-box">
+                                    <span class="res-label">Gross Profit Margin:</span>
+                                    <strong class="res-val" id="res-gross-pct">0%</strong>
+                                    <code class="res-code">=Gross_Profit / Contract</code>
+                                </div>
+                                <div class="res-box">
+                                    <span class="res-label">Incentive Share (25%):</span>
+                                    <strong class="res-val" id="res-incentive">฿0</strong>
+                                    <code class="res-code">=Gross_Profit * 0.25</code>
+                                </div>
+                            </div>
+
+                            <div class="code-preview">
+                                <h5><i class="fa-brands fa-js"></i> Equivalent JavaScript Function</h5>
+                                <pre><code id="js-code-view">
+function calculateGrossProfit(contractPrice, actualExpense) {
+    return Number((contractPrice - actualExpense).toFixed(2));
+}
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROJECT DETAIL / MODAL VIEW -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h3 id="modal-project-title"><i class="fa-solid fa-folder-open"></i> Project Detail</h3>
+                <button class="modal-close" id="modal-close-btn">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="project-form">
+                    <input type="hidden" id="form-pj-id">
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label>Job Code *</label>
+                            <input type="text" id="form-job-code" required class="form-control" placeholder="PEK-2500/001">
+                        </div>
+                        <div class="form-group col-4">
+                            <label>Offer / Quotation No.</label>
+                            <input type="text" id="form-offer-no" class="form-control" placeholder="QTE-DDP-20250006">
+                        </div>
+                        <div class="form-group col-4">
+                            <label>Status</label>
+                            <select id="form-status" class="form-select">
+                                <option value="In Progress">In Progress</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Client Name *</label>
+                            <input type="text" id="form-client-name" required class="form-control" placeholder="Client Co., Ltd.">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Project Name *</label>
+                            <input type="text" id="form-project-name" required class="form-control" placeholder="Project Name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Contract Price (฿) *</label>
+                            <input type="number" step="0.01" id="form-contract-price" required class="form-control" placeholder="66000.00">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Budget Price (฿) *</label>
+                            <input type="number" step="0.01" id="form-budget-price" required class="form-control" placeholder="56000.00">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="form-description" rows="2" class="form-control" placeholder="Work scope & description"></textarea>
+                    </div>
+
+                    <!-- Category Budget Breakdown Table -->
+                    <div class="detail-section">
+                        <h4><i class="fa-solid fa-list-ol"></i> Budget Breakdown by JPP Code Category</h4>
+                        <div class="table-responsive">
+                            <table class="data-table text-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Code</th>
+                                        <th>Category Description</th>
+                                        <th>Budget Price (฿)</th>
+                                        <th>Expense Record (฿)</th>
+                                        <th>Remaining Balance (฿)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modal-category-tbody">
+                                    <!-- Rendered dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Expense Items Log Table -->
+                    <div class="detail-section">
+                        <div class="section-header-row">
+                            <h4><i class="fa-solid fa-receipt"></i> Expense Item Log</h4>
+                            <button type="button" class="btn btn-primary btn-sm" id="btn-add-item">
+                                <i class="fa-solid fa-plus"></i> Add Expense Item
+                            </button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="data-table text-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Vendor Name</th>
+                                        <th>Code</th>
+                                        <th>Description</th>
+                                        <th>Amount (฿)</th>
+                                        <th>Updated By</th>
+                                        <th class="text-right">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modal-items-tbody">
+                                    <!-- Rendered dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btn-modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Save Project</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPENSE ITEM MODAL -->
+    <div class="modal" id="item-modal">
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <h4 id="item-modal-title"><i class="fa-solid fa-plus"></i> Expense Item</h4>
+                <button class="modal-close" id="item-modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="item-form">
+                    <input type="hidden" id="item-form-id">
+                    <div class="form-group">
+                        <label>Vendor Name</label>
+                        <input type="text" id="item-vendor" class="form-control" placeholder="Company / Vendor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Cost Category (JPP Code)</label>
+                            <select id="item-category-code" class="form-select">
+                                <!-- Rendered dynamically -->
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Amount (฿) *</label>
+                            <input type="number" step="0.01" id="item-amount" required class="form-control" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input type="text" id="item-description" class="form-control" placeholder="Item details">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Date</label>
+                            <input type="date" id="item-date" class="form-control">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Updated By</label>
+                            <input type="text" id="item-updated-by" class="form-control" placeholder="K.Kowit">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btn-item-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Save Item</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/costEngine.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

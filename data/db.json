@@ -1,0 +1,4599 @@
+{
+  "categories": [
+    {
+      "code": 10,
+      "name": "MATERIALS"
+    },
+    {
+      "code": 20,
+      "name": "SUB CONTRACTOR"
+    },
+    {
+      "code": 30,
+      "name": "HEAVY EQUIPMENT"
+    },
+    {
+      "code": 40,
+      "name": "RENTAL"
+    },
+    {
+      "code": 50,
+      "name": "STAFF EXPENSE (Salary)"
+    },
+    {
+      "code": 60,
+      "name": "OFFICE EXPENSE"
+    },
+    {
+      "code": 70,
+      "name": "ENTERTAIN"
+    },
+    {
+      "code": 80,
+      "name": "MISCELLANEOUS"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PJ-001",
+      "job_code": "PC-009",
+      "offer_no": "",
+      "client_name": "PROCHAIN",
+      "project_name": "BHP Factory",
+      "description": "",
+      "sheet_name": "PC-009 BHP",
+      "contract_price": 0.0,
+      "budget_price": 6880000.0,
+      "status": "In Progress",
+      "start_date": "2025-06-25",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "ค่าดำเนินการติดตั้งมิเตอร์การไฟฟ้า",
+          "material_number": 80,
+          "description": "ค่าดำเนินการ",
+          "text_quo": "",
+          "amount": 15000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-20",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 15000.0,
+          "balance": -15000.0
+        }
+      ],
+      "total_actual_expenses": 15000.0,
+      "remaining_budget": 6865000.0,
+      "budget_profit_pct": 0.0,
+      "budget_profit_amount": -6880000.0,
+      "gross_profit_amount": -15000.0,
+      "gross_profit_pct": 0.0,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-002",
+      "job_code": "TMD-2601/001",
+      "offer_no": "DDP-2026000003",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "JINHAI Factory",
+      "description": "งาน PM Test Protection Relay",
+      "sheet_name": "PC-008 JINHAI",
+      "contract_price": 42000.0,
+      "budget_price": 40000.0,
+      "status": "Completed",
+      "start_date": "2025-06-25",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "ค่าดำเนินการติดตั้งมิเตอร์การไฟฟ้า",
+          "material_number": 80,
+          "description": "ค่าดำเนินการ",
+          "text_quo": "",
+          "amount": 15000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-20",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 15000.0,
+          "balance": -15000.0
+        }
+      ],
+      "total_actual_expenses": 15000.0,
+      "remaining_budget": 25000.0,
+      "budget_profit_pct": 0.0476,
+      "budget_profit_amount": 2000.0,
+      "gross_profit_amount": 27000.0,
+      "gross_profit_pct": 0.6429,
+      "incentive_share": 6750.0
+    },
+    {
+      "id": "PJ-003",
+      "job_code": "UNT-2601/001",
+      "offer_no": "DDP-2026000002",
+      "client_name": "Unity System Co., Ltd.",
+      "project_name": "งานค่าแรงผู้รับเหมา รพ.ภัทรเวช",
+      "description": "งานค่าแรงผู้รับเหมา รพ.ภัทรเวช",
+      "sheet_name": "PC-007 บ้านลาดกระบัง",
+      "contract_price": 143840.18,
+      "budget_price": 128708.19,
+      "status": "In Progress",
+      "start_date": "2025-06-01",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "ราง Cable tray",
+          "text_quo": "SUV-250107744",
+          "amount": 9469.1,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-25",
+          "po": "PO2025060023"
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท สยาม โคสทอล อินเตอร์เทรด จำกัด",
+          "material_number": 10,
+          "description": "MDB Panel",
+          "text_quo": "0267LC68SC",
+          "amount": 57500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-24",
+          "po": "PO2025060021"
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "ท่ออ่อน PVC.",
+          "text_quo": "SUV-250106117",
+          "amount": 12900.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-21",
+          "po": "PO2025050011"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "Fitting ราง Cable Tray",
+          "text_quo": "SUV-250109340",
+          "amount": 4188.8,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-25",
+          "po": "PO2025080001"
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "Load Center",
+          "text_quo": "SUV-250107045",
+          "amount": 46196.8,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-12",
+          "po": "PO2025060012"
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 130254.7,
+          "balance": -130254.7
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 130254.7,
+      "remaining_budget": -1546.51,
+      "budget_profit_pct": 0.1052,
+      "budget_profit_amount": 15131.99,
+      "gross_profit_amount": 13585.48,
+      "gross_profit_pct": 0.0944,
+      "incentive_share": 3396.37
+    },
+    {
+      "id": "PJ-004",
+      "job_code": "JEP-2601/001",
+      "offer_no": "DDP-2026000001",
+      "client_name": "บริษัท เจตภัทร คอนสตรัคชั่น แอนด์ ดีไซน์ จำกัด",
+      "project_name": "งานติดตั้งคอนโด The Line Vibe ห้อง549",
+      "description": "งานติดตั้งคอนโด The Line Vibe ห้อง549",
+      "sheet_name": "XP-001 งานนครนายก",
+      "contract_price": 12000.0,
+      "budget_price": 12800.0,
+      "status": "Completed",
+      "start_date": "2025-06-10",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "NRE",
+          "material_number": 10,
+          "description": "ราคาราง Cable Tray",
+          "text_quo": "",
+          "amount": 35608.8,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-13",
+          "po": "PO2025060014"
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท สยาม โคสทอล อินเตอร์เทรด จำกัด",
+          "material_number": 10,
+          "description": "มิเตอร์ Digitakl Meter Schneider",
+          "text_quo": "",
+          "amount": 5500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-17",
+          "po": "PO2025060018"
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "บริษัท สยาม โคสทอล อินเตอร์เทรด จำกัด",
+          "material_number": 10,
+          "description": "Steel Plate",
+          "text_quo": "",
+          "amount": 10000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-25",
+          "po": "PO2025060022"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "ซื้อของทั่วไป",
+          "material_number": 10,
+          "description": "",
+          "text_quo": "",
+          "amount": 3000.0,
+          "updated_by": "Sarawut",
+          "date": "2025-06-25",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "ทีมงาน SEE พี่โจ๊ส",
+          "material_number": 20,
+          "description": "",
+          "text_quo": "",
+          "amount": 32000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-25",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าเหล็ก",
+          "text_quo": "",
+          "amount": 1240.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าเหล็ก",
+          "text_quo": "",
+          "amount": 240.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ซื้อแผ่นเหล็กเพิ่มอีก 2 แผ่น",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงทีมงาน",
+          "text_quo": "",
+          "amount": 5307.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าน้ำมันรถ",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "ฮาร์ดแวร์เฮาส์",
+          "material_number": 10,
+          "description": "ค่าสี และแผ่นเหล็ก",
+          "text_quo": "",
+          "amount": 976.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-09",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 59064.8,
+          "balance": -59064.8
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 32000.0,
+          "balance": -32000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 7307.0,
+          "balance": -7307.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 98371.8,
+      "remaining_budget": -85571.8,
+      "budget_profit_pct": -0.0667,
+      "budget_profit_amount": -800.0,
+      "gross_profit_amount": -86371.8,
+      "gross_profit_pct": -7.1977,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-005",
+      "job_code": "PKE-2500/002",
+      "offer_no": "QTE-DDP-20250031",
+      "client_name": "PK Engineering Solution Service Co., Ltd.",
+      "project_name": "22kV. Pole and Underground project",
+      "description": "งานติดตั้งพัดลมระบายอากาศ",
+      "sheet_name": "MC-002 Udonthani",
+      "contract_price": 7000.0,
+      "budget_price": 4000.0,
+      "status": "In Progress",
+      "start_date": "2025-06-25",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "ตั๋วเครื่องบิน",
+          "material_number": 80,
+          "description": "บินไปสำรวจหน้างานก่อนเสนอราคา",
+          "text_quo": "",
+          "amount": 8000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-25",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "ตั๋วเครื่องบิน",
+          "material_number": 80,
+          "description": "บินไปประชุมกับลูกค้า Kick Off Meeting",
+          "text_quo": "",
+          "amount": 3254.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-25",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "ร้านเช่ารถ",
+          "material_number": 80,
+          "description": "ค่าเช่ารถ",
+          "text_quo": "",
+          "amount": 4300.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-16",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "ร้านเช่ารถ",
+          "material_number": 80,
+          "description": "ค่าซ่อมรถเช่า",
+          "text_quo": "",
+          "amount": 3000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-16",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "โรงแรมบีทู",
+          "material_number": 80,
+          "description": "ค่าโรงแรม",
+          "text_quo": "",
+          "amount": 855.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-18",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "โรงแรม UD",
+          "material_number": 80,
+          "description": "ค่าโรงแรม",
+          "text_quo": "",
+          "amount": 850.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-18",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "บริษัท เค.ที.เอ็น เอ็นจิเนียริ่ง 1112 จำกัด (สำนักงานใหญ่)",
+          "material_number": 20,
+          "description": "งาน UG และลากสาย XLPE",
+          "text_quo": "",
+          "amount": 2644700.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-16",
+          "po": "PO2025060015"
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "บริษัท ทักษิณคอนกรีต จำกัด",
+          "material_number": 10,
+          "description": "ค่าเสาไฟ และคอร์น คอนกรีต",
+          "text_quo": "",
+          "amount": 562400.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-03",
+          "po": "PO2025070004"
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 80,
+          "description": "เลี้ยงลูกค้า",
+          "text_quo": "",
+          "amount": 17760.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 80,
+          "description": "ทางด่วน เดินทางไปกลับอุดรธานี",
+          "text_quo": "",
+          "amount": 145.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "ค่าน้ำมัน",
+          "material_number": 80,
+          "description": "ค่าน้ำมัน เดินทางไปกลับอุดรธานี",
+          "text_quo": "",
+          "amount": 405.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "ค่าน้ำมัน",
+          "material_number": 80,
+          "description": "ค่าน้ำมัน เดินทางไปกลับอุดรธานี",
+          "text_quo": "",
+          "amount": 377.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "ค่าน้ำมัน",
+          "material_number": 80,
+          "description": "ค่าน้ำมัน เดินทางไปกลับอุดรธานี",
+          "text_quo": "",
+          "amount": 380.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "ค่าน้ำมัน",
+          "material_number": 80,
+          "description": "ค่าน้ำมัน เดินทางไปกลับอุดรธานี",
+          "text_quo": "",
+          "amount": 400.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "โรงแรม B2",
+          "material_number": 50,
+          "description": "ค่าห้องพัก 1",
+          "text_quo": "",
+          "amount": 540.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-07-29",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 562400.0,
+          "balance": -562400.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 2644700.0,
+          "balance": -2644700.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 540.0,
+          "balance": -540.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 39726.0,
+          "balance": -39726.0
+        }
+      ],
+      "total_actual_expenses": 3247366.0,
+      "remaining_budget": -3243366.0,
+      "budget_profit_pct": 0.4286,
+      "budget_profit_amount": 3000.0,
+      "gross_profit_amount": -3240366.0,
+      "gross_profit_pct": -462.9094,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-006",
+      "job_code": "SUT-2500/001",
+      "offer_no": "QTE-DDP-20250026",
+      "client_name": "คุณสุทธิพงษ์",
+      "project_name": "22kV. Pole installation",
+      "description": "งานบ้านห้วยขวาง",
+      "sheet_name": "PPC-001 Nestle",
+      "contract_price": 37500.0,
+      "budget_price": 28290.0,
+      "status": "Completed",
+      "start_date": "2025-05-01",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "Siriprapa",
+          "material_number": 10,
+          "description": "PQM meter / EDMI Panel",
+          "text_quo": "68/05-05A-R1",
+          "amount": 222000.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "Precise",
+          "material_number": 10,
+          "description": "อุปกรณ์ HV",
+          "text_quo": "PO2025050018",
+          "amount": 316060.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "บริษัท ธราดล 2555 จำกัด",
+          "material_number": 20,
+          "description": "จ้างตัดคอนกรีต",
+          "text_quo": "PO2025060004",
+          "amount": 8800.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "หจก. บีเอ็ม แอนด์ เบนซ์ ค้าวัสดุ (อยุธยา)",
+          "material_number": 10,
+          "description": "",
+          "text_quo": "999INV-2506-0160",
+          "amount": 1046.73,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "เช่าเครื่องตัดปูน",
+          "material_number": 40,
+          "description": "",
+          "text_quo": "QR-00184228",
+          "amount": 1121.5,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "ส.อรุน",
+          "material_number": 10,
+          "description": "เสาคอนกรีต",
+          "text_quo": "QT-25001984",
+          "amount": 235239.5,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "ซ่อมรถ",
+          "material_number": 30,
+          "description": "ซ่อมรถสว่าน",
+          "text_quo": "BL2025060012",
+          "amount": 17500.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "ร้านนครสวรรค์",
+          "material_number": 10,
+          "description": "หัวเพชร เจาะดิน",
+          "text_quo": "",
+          "amount": 3500.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "ร้านค้าอุปกรณ์ก่อสร้าง",
+          "material_number": 10,
+          "description": "ชะแลง ไม้กวาด กรรไกรตัดเหล็ก",
+          "text_quo": "",
+          "amount": 1093.46,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "ร้านค้าอุปกรณ์ก่อสร้าง",
+          "material_number": 10,
+          "description": "กระสอบปุ๋ย",
+          "text_quo": "",
+          "amount": 168.22,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "SSI",
+          "material_number": 10,
+          "description": "ชุด KIT ต่อสาย 3M",
+          "text_quo": "",
+          "amount": 2200.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "ฮาร์ดแวร์เฮาส์",
+          "material_number": 10,
+          "description": "เครื่องมือต่อสายไฟ",
+          "text_quo": "",
+          "amount": 1102.1,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "ณัฐภูมิ อีควิปเม้นท์ จำกัด",
+          "material_number": 10,
+          "description": "ลูกถ้วยหัวเสา และเหล็ก คอร์น",
+          "text_quo": "",
+          "amount": 210608.1,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "กิจพูนชัย จำกัด",
+          "material_number": 10,
+          "description": "น๊อตประกอบหัวเสา",
+          "text_quo": "",
+          "amount": 42061.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "",
+          "material_number": 30,
+          "description": "ค่าซ่อมรถลุงชาย",
+          "text_quo": "",
+          "amount": 8000.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 1035079.11,
+          "balance": -1035079.11
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 8800.0,
+          "balance": -8800.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 25500.0,
+          "balance": -25500.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 1121.5,
+          "balance": -1121.5
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 1070500.61,
+      "remaining_budget": -1042210.61,
+      "budget_profit_pct": 0.2456,
+      "budget_profit_amount": 9210.0,
+      "gross_profit_amount": -1033000.61,
+      "gross_profit_pct": -27.5467,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-007",
+      "job_code": "UNT-2500/001",
+      "offer_no": "-",
+      "client_name": "Unity System Co., Ltd.",
+      "project_name": "JOWLE Factory",
+      "description": "งานค่าแรงผู้รับเหมา",
+      "sheet_name": "PC-006 JOWLE",
+      "contract_price": 371100.0,
+      "budget_price": 371100.0,
+      "status": "In Progress",
+      "start_date": "2024-02-14",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "NRE",
+          "material_number": 10,
+          "description": "สายไฟ FRC สำหรับระบบ Fire Alarm",
+          "text_quo": "SUV-250103489",
+          "amount": 78720.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-03-19",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท คว๊อด อิเลคทริค จำกัด",
+          "material_number": 10,
+          "description": "หม้อแปลงไฟฟ้าระบบระบายความร้อนด้วยน้ำมัน",
+          "text_quo": "QT20250304150",
+          "amount": 395000.0,
+          "updated_by": "k.milk",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "สาย Max-foh-l 1x2.5 sqmm.",
+          "text_quo": "SUV-250103784",
+          "amount": 78720.0,
+          "updated_by": "k.milk",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "เมธีกุล จำกัด",
+          "material_number": 10,
+          "description": "สายไฟ THW 1.5 MM^2",
+          "text_quo": "QT68030968",
+          "amount": 5854.8,
+          "updated_by": "k.milk",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "เมธีกุล จำกัด",
+          "material_number": 10,
+          "description": "60227 IEC01 THW",
+          "text_quo": "QT68030868",
+          "amount": 2114343.66,
+          "updated_by": "k.milk",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "สรรพากร",
+          "material_number": 60,
+          "description": "Duty Stamp",
+          "text_quo": "",
+          "amount": 13800.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "ค่าแรงพี่แมน",
+          "material_number": 20,
+          "description": "ค่าแรงพี่แมนสำหรับทั้งโครงการ",
+          "text_quo": "",
+          "amount": 1150000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-04-22",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "Wireway 100x100",
+          "text_quo": "SUV-250106361",
+          "amount": 106275.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-29",
+          "po": "PO2025050024"
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "สายทนไฟ",
+          "text_quo": "SUV-250106381",
+          "amount": 23616.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "บริษัทไทคิน สตีล จำกัด",
+          "material_number": 10,
+          "description": "สตัด หัวน๊อต",
+          "text_quo": "QT0036013",
+          "amount": 9705.16,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "THW 2.5 Sq.mm.",
+          "text_quo": "SUV-250106333",
+          "amount": 30030.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "ท่ออ่อน ขาว",
+          "text_quo": "SUV-250106291",
+          "amount": 4755.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "บริษัทไทคิน สตีล จำกัด",
+          "material_number": 10,
+          "description": "สกรูเกลียวเหล็ก 7x1.1/2\"",
+          "text_quo": "QT0035903",
+          "amount": 1044.75,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-21",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "ท่ออ่อน ขาว",
+          "text_quo": "SUV-250105440",
+          "amount": 25107.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-06",
+          "po": "PO2025050002"
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "ท่อ EMT 1/2\"",
+          "text_quo": "SUV-250107305",
+          "amount": 25935.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-17",
+          "po": "PO2025060017"
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 2899106.37,
+          "balance": -2899106.37
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 1150000.0,
+          "balance": -1150000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 13800.0,
+          "balance": -13800.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 4062906.37,
+      "remaining_budget": -3691806.37,
+      "budget_profit_pct": 0.0,
+      "budget_profit_amount": 0.0,
+      "gross_profit_amount": -3691806.37,
+      "gross_profit_pct": -9.9483,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-008",
+      "job_code": "SF-001",
+      "offer_no": "",
+      "client_name": "PROCHAIN",
+      "project_name": "SHIN FONG Factory",
+      "description": "",
+      "sheet_name": "PC-005 SHIN FONG",
+      "contract_price": 26000.0,
+      "budget_price": 2930000.0,
+      "status": "Completed",
+      "start_date": "2024-02-14",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "เมธีกุล จำกัด",
+          "material_number": 10,
+          "description": "สายไฟ 60227 IEC01 THW",
+          "text_quo": "QT68030869",
+          "amount": 546041.2,
+          "updated_by": "k.milk",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท คว็อด อิเลคทริค จำกัด",
+          "material_number": 10,
+          "description": "หม้อแปลง 500kVA",
+          "text_quo": "QT2025050132",
+          "amount": 245000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-05-21",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 791041.2,
+          "balance": -791041.2
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 791041.2,
+      "remaining_budget": 2138958.8,
+      "budget_profit_pct": -111.6923,
+      "budget_profit_amount": -2904000.0,
+      "gross_profit_amount": -765041.2,
+      "gross_profit_pct": -29.4247,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-009",
+      "job_code": "PKE-2500/001",
+      "offer_no": "QTE-DDP-20250008",
+      "client_name": "PK Engineering Solution Service Co., Ltd.",
+      "project_name": "มาบตาพุต ร้านอาหาร ร้านกาแฟ อาคาร D และ อาคาร A",
+      "description": "งานติดตั้งตู้ และทำ Tray รสา 1 ชั้น 18 19",
+      "sheet_name": "PC-004 อาคาร D",
+      "contract_price": 32460.0,
+      "budget_price": 24400.0,
+      "status": "In Progress",
+      "start_date": "2024-02-14",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "Cable THW 2.5",
+          "text_quo": "SUV-250106507",
+          "amount": 28210.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-04-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "N.R.E",
+          "material_number": 10,
+          "description": "สาย Max-foh-l 1x2.5 sqmm.",
+          "text_quo": "SUV-250107052",
+          "amount": 13120.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-06-12",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 41330.0,
+          "balance": -41330.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 41330.0,
+      "remaining_budget": -16930.0,
+      "budget_profit_pct": 0.2483,
+      "budget_profit_amount": 8060.0,
+      "gross_profit_amount": -8870.0,
+      "gross_profit_pct": -0.2733,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-010",
+      "job_code": "ค่าใช้จ่ายออฟฟิศ",
+      "offer_no": "50000",
+      "client_name": "Client",
+      "project_name": "ค่าใช้จ่ายออฟฟิศ",
+      "description": "",
+      "sheet_name": "ค่าใช้จ่ายออฟฟิศ",
+      "contract_price": 0.0,
+      "budget_price": 8000.0,
+      "status": "Completed",
+      "start_date": "2025-10-01",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "",
+          "material_number": 60,
+          "description": "เสื้อช็อปบริษัท",
+          "text_quo": "",
+          "amount": 1404.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-09-22",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 60,
+          "description": "เสื้อช็อปบริษัท",
+          "text_quo": "",
+          "amount": 4815.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-09-22",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 60,
+          "description": "นามบัตรพิมพ์ 1 ด้าน",
+          "text_quo": "",
+          "amount": 250.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-09-22",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าเครื่องมือ สว่านไฟฟ้า เครื่องเจียร",
+          "text_quo": "",
+          "amount": 3868.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-09-22",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 20,
+          "description": "บัญชี เดือน 10",
+          "text_quo": "",
+          "amount": 1500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 20,
+          "description": "บัญชี เดือน 11",
+          "text_quo": "",
+          "amount": 1500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าชุดประแจ คีมย้ำ ใบตัด ใบเจียร",
+          "text_quo": "",
+          "amount": 1043.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 10,
+          "description": "แคมป์ มิเตอร์",
+          "text_quo": "",
+          "amount": 1200.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าซองจดหมาย ซองน้ำตาล",
+          "text_quo": "",
+          "amount": 643.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 60,
+          "description": "ค่าป้ายรับสมัครงาน",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-28",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 60,
+          "description": "ค่าส่งป้าย",
+          "text_quo": "",
+          "amount": 234.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-28",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "",
+          "material_number": 60,
+          "description": "ค่ากระดาษ A4",
+          "text_quo": "3792",
+          "amount": 61.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-01-15",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 8000.0,
+          "expense": 6754.0,
+          "balance": 1246.0
+        }
+      ],
+      "total_actual_expenses": 17518.0,
+      "remaining_budget": -9518.0,
+      "budget_profit_pct": 0.0,
+      "budget_profit_amount": -8000.0,
+      "gross_profit_amount": -17518.0,
+      "gross_profit_pct": 0.0,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-011",
+      "job_code": "TMD-2601/005",
+      "offer_no": "",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "description": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "sheet_name": "24 POM-007",
+      "contract_price": 18000.0,
+      "budget_price": 10000.0,
+      "status": "In Progress",
+      "start_date": "2026-04-01",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "ร้านโซล่าดีดี",
+          "material_number": 10,
+          "description": "แพงอุปกร์ Solar",
+          "text_quo": "TEST007",
+          "amount": 70000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 80000.0,
+          "expense": 70000.0,
+          "balance": 10000.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 280000.0,
+          "expense": 0.0,
+          "balance": 280000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 70000.0,
+      "remaining_budget": -60000.0,
+      "budget_profit_pct": 0.4444,
+      "budget_profit_amount": 8000.0,
+      "gross_profit_amount": -52000.0,
+      "gross_profit_pct": -2.8889,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-012",
+      "job_code": "TMD-2601/005",
+      "offer_no": "",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "description": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "sheet_name": "23 TMD-006",
+      "contract_price": 18000.0,
+      "budget_price": 10000.0,
+      "status": "Completed",
+      "start_date": "2026-04-01",
+      "expense_items": [],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 280000.0,
+          "expense": 0.0,
+          "balance": 280000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 0,
+      "remaining_budget": 10000.0,
+      "budget_profit_pct": 0.4444,
+      "budget_profit_amount": 8000.0,
+      "gross_profit_amount": 18000.0,
+      "gross_profit_pct": 1.0,
+      "incentive_share": 4500.0
+    },
+    {
+      "id": "PJ-013",
+      "job_code": "TMD-2601/005",
+      "offer_no": "",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "description": "งานติดตั้งท่อลากสายแอร์ OCC",
+      "sheet_name": "22 TMD-005",
+      "contract_price": 18000.0,
+      "budget_price": 10000.0,
+      "status": "In Progress",
+      "start_date": "2026-04-01",
+      "expense_items": [],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 10000.0,
+          "expense": 0.0,
+          "balance": 10000.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 0,
+      "remaining_budget": 10000.0,
+      "budget_profit_pct": 0.4444,
+      "budget_profit_amount": 8000.0,
+      "gross_profit_amount": 18000.0,
+      "gross_profit_pct": 1.0,
+      "incentive_share": 4500.0
+    },
+    {
+      "id": "PJ-014",
+      "job_code": "TMD-2601/004",
+      "offer_no": "",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานติดตั้งท่อสำหรับ MWS 5 ห้อง",
+      "description": "งานติดตั้งท่อสำหรับ MWS 5 ห้อง",
+      "sheet_name": "21 TMD-004",
+      "contract_price": 620000.0,
+      "budget_price": 550000.0,
+      "status": "Completed",
+      "start_date": "2026-04-01",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "DDP",
+          "material_number": 50,
+          "description": "ค่าแรงทีมงาน",
+          "text_quo": "",
+          "amount": 54535.42,
+          "updated_by": "K.Kowit",
+          "date": "2026-05-06",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "testpom",
+          "material_number": 10,
+          "description": "เหล็ก",
+          "text_quo": "",
+          "amount": 5000.0,
+          "updated_by": "K.Pom",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 10000.0,
+          "expense": 5000.0,
+          "balance": 5000.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 480000.0,
+          "expense": 0.0,
+          "balance": 480000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 60000.0,
+          "expense": 54535.42,
+          "balance": 5464.58
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 59535.42,
+      "remaining_budget": 490464.58,
+      "budget_profit_pct": 0.1129,
+      "budget_profit_amount": 70000.0,
+      "gross_profit_amount": 560464.58,
+      "gross_profit_pct": 0.904,
+      "incentive_share": 140116.14
+    },
+    {
+      "id": "PJ-015",
+      "job_code": "SOL-2604/02",
+      "offer_no": "",
+      "client_name": "ร้าน Over Wash",
+      "project_name": "Solar cell 17.9kWp.",
+      "description": "Solar cell 17.9kWp.",
+      "sheet_name": "20 SOL-264 02",
+      "contract_price": 235660.0,
+      "budget_price": 215000.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "GTI",
+          "material_number": 10,
+          "description": "ค่าอุปกรณ์ ติดตั้ง  Mounting",
+          "text_quo": "",
+          "amount": 1318.24,
+          "updated_by": "K.Kowit",
+          "date": "2026-04-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "GTI",
+          "material_number": 10,
+          "description": "ค่าอุปกรณ์ ติดตั้ง  Mounting",
+          "text_quo": "",
+          "amount": 809.78,
+          "updated_by": "K.Kowit",
+          "date": "2026-04-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "Solar Thailand",
+          "material_number": 10,
+          "description": "ค่าสาย RS485",
+          "text_quo": "",
+          "amount": 2407.6,
+          "updated_by": "K.Kowit",
+          "date": "2026-04-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "Electric and Cable Co., Ltd.",
+          "material_number": 10,
+          "description": "ค่าท่อและอุปกรณ์อื่นๆ",
+          "text_quo": "",
+          "amount": 18741.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-04-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "Hardware House",
+          "material_number": 10,
+          "description": "สายไฟ THW 10Sq.mm.",
+          "text_quo": "",
+          "amount": 5300.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-04-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 10,
+          "description": "เจมส์ซื้อของ",
+          "text_quo": "",
+          "amount": 1272.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "ไทวัสดุ",
+          "material_number": 10,
+          "description": "เจมส์ซื้อของบันได",
+          "text_quo": "",
+          "amount": 5068.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "Hardware House",
+          "material_number": 10,
+          "description": "เบรกเกอร์ ABB",
+          "text_quo": "",
+          "amount": 500.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "เมืองไฟฟ้า",
+          "material_number": 10,
+          "description": "อุปกรณ์ สิ้นเปลือง",
+          "text_quo": "",
+          "amount": 1500.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "ปตท.",
+          "material_number": 50,
+          "description": "ค่าน้ำมันรถเดินทาง",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงคนงาน",
+          "text_quo": "",
+          "amount": 10440.0,
+          "updated_by": "เจมส์",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงพี่ตุ๋ย",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงมอสเขียนแบบ",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 200000.0,
+          "expense": 36916.62,
+          "balance": 163083.38
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 15000.0,
+          "expense": 16440.0,
+          "balance": -1440.0
+        }
+      ],
+      "total_actual_expenses": 53356.62,
+      "remaining_budget": 161643.38,
+      "budget_profit_pct": 0.0877,
+      "budget_profit_amount": 20660.0,
+      "gross_profit_amount": 182303.38,
+      "gross_profit_pct": 0.7736,
+      "incentive_share": 45575.85
+    },
+    {
+      "id": "PJ-016",
+      "job_code": "TMD-2601/003",
+      "offer_no": "QTE-DDP-2026000XX",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานรถไฟฟ้าสายสีส้ม สำรวจหน้างาน",
+      "description": "งาน PM Honda",
+      "sheet_name": "15 RACH36",
+      "contract_price": 20000.0,
+      "budget_price": 16000.0,
+      "status": "Completed",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าแผง",
+          "text_quo": "",
+          "amount": 299904.0,
+          "updated_by": "K.Kowit",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าคอมมิชชั่น",
+          "text_quo": "",
+          "amount": 2500.0,
+          "updated_by": "Ken",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 300000.0,
+          "expense": 302404.0,
+          "balance": -2404.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 90000.0,
+          "expense": 0.0,
+          "balance": 90000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 302404.0,
+      "remaining_budget": -286404.0,
+      "budget_profit_pct": 0.2,
+      "budget_profit_amount": 4000.0,
+      "gross_profit_amount": -282404.0,
+      "gross_profit_pct": -14.1202,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-017",
+      "job_code": "TMD-2601/003",
+      "offer_no": "QTE-DDP-2026000XX",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานรถไฟฟ้าสายสีส้ม สำรวจหน้างาน",
+      "description": "งาน PM Honda",
+      "sheet_name": "14 TMD-2601-003",
+      "contract_price": 20000.0,
+      "budget_price": 16000.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 10000.0,
+          "expense": 0.0,
+          "balance": 10000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 6000.0,
+          "expense": 0.0,
+          "balance": 6000.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 0,
+      "remaining_budget": 16000.0,
+      "budget_profit_pct": 0.2,
+      "budget_profit_amount": 4000.0,
+      "gross_profit_amount": 20000.0,
+      "gross_profit_pct": 1.0,
+      "incentive_share": 5000.0
+    },
+    {
+      "id": "PJ-018",
+      "job_code": "JPP-2500/001",
+      "offer_no": "QTE-DDP-2026000XX",
+      "client_name": "Jatupaspol Co., Ltd.",
+      "project_name": "งาน Manday ลากสาย Gulf",
+      "description": "งาน Manday ลากสาย Gulf",
+      "sheet_name": "13 JPP-2601-001",
+      "contract_price": 19000.0,
+      "budget_price": 15000.0,
+      "status": "Completed",
+      "start_date": "2026-01-23",
+      "expense_items": [],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 5000.0,
+          "expense": 0.0,
+          "balance": 5000.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 10000.0,
+          "expense": 0.0,
+          "balance": 10000.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 0,
+      "remaining_budget": 15000.0,
+      "budget_profit_pct": 0.2105,
+      "budget_profit_amount": 4000.0,
+      "gross_profit_amount": 19000.0,
+      "gross_profit_pct": 1.0,
+      "incentive_share": 4750.0
+    },
+    {
+      "id": "PJ-019",
+      "job_code": "TMD-2601/002",
+      "offer_no": "QTE-DDP-2026000XX",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งานรถไฟฟ้าสายสีส้ม สำรวจหน้างาน",
+      "description": "งานรถไฟฟ้าสายสีส้ม สำรวจหน้างาน",
+      "sheet_name": "12 TMD-2601-002",
+      "contract_price": 69855.0,
+      "budget_price": 40000.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "",
+          "material_number": 10,
+          "description": "หมวกเซฟตี้และชุดถถังปั่นไมโคร",
+          "text_quo": "",
+          "amount": 1172.74,
+          "updated_by": "K.Kowit",
+          "date": "2026-02-16",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 10,
+          "description": "หน้ากากอนามัย แว่นตากันสะเก็ด",
+          "text_quo": "",
+          "amount": 178.59,
+          "updated_by": "K.Kowit",
+          "date": "2026-02-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงช่าง 3 คน",
+          "text_quo": "",
+          "amount": 30000.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-01-27",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 10000.0,
+          "expense": 1351.33,
+          "balance": 8648.67
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 30000.0,
+          "expense": 30000.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 31351.33,
+      "remaining_budget": 8648.67,
+      "budget_profit_pct": 0.4274,
+      "budget_profit_amount": 29855.0,
+      "gross_profit_amount": 38503.67,
+      "gross_profit_pct": 0.5512,
+      "incentive_share": 9625.92
+    },
+    {
+      "id": "PJ-020",
+      "job_code": "TMD-2601/001",
+      "offer_no": "DDP-2026000003",
+      "client_name": "Thai Meidensha Co., Ltd.",
+      "project_name": "งาน PM Test Protection Relay",
+      "description": "งาน PM Test Protection Relay",
+      "sheet_name": "11 TMD-2601-001",
+      "contract_price": 42000.0,
+      "budget_price": 40000.0,
+      "status": "Completed",
+      "start_date": "2025-10-04",
+      "expense_items": [],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 40000.0,
+          "expense": 0.0,
+          "balance": 40000.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 0,
+      "remaining_budget": 40000.0,
+      "budget_profit_pct": 0.0476,
+      "budget_profit_amount": 2000.0,
+      "gross_profit_amount": 42000.0,
+      "gross_profit_pct": 1.0,
+      "incentive_share": 10500.0
+    },
+    {
+      "id": "PJ-021",
+      "job_code": "UNT-2601/001",
+      "offer_no": "DDP-2026000002",
+      "client_name": "Unity System Co., Ltd.",
+      "project_name": "งานค่าแรงผู้รับเหมา รพ.ภัทรเวช",
+      "description": "งานค่าแรงผู้รับเหมา รพ.ภัทรเวช",
+      "sheet_name": "10 UNT-2601-001 รพ.ภัทรเวช (2)",
+      "contract_price": 143840.18,
+      "budget_price": 128708.19,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "",
+          "material_number": 20,
+          "description": "",
+          "text_quo": "",
+          "amount": 35107.15,
+          "updated_by": "K.Kowit",
+          "date": "2026-01-23",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 20,
+          "description": "",
+          "text_quo": "",
+          "amount": 57642.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-02-09",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 20,
+          "description": "",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "รายรับจากลูกค้าเดือน 8-15 ม.ค.",
+          "material_number": 0,
+          "description": "ค่าแรงงานรายวัน ทำงานติดตั้ง",
+          "text_quo": "",
+          "amount": 37349.3,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "รายรับจากลูกค้าเดือน 16-31 ม.ค.",
+          "material_number": 0,
+          "description": "ค่าแรงงานรายวัน ทำงานติดตั้ง",
+          "text_quo": "",
+          "amount": 38520.0,
+          "updated_by": "K.Kowit",
+          "date": "2026-01-16",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 143840.18,
+          "expense": 92749.15,
+          "balance": 51091.03
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 168618.45,
+      "remaining_budget": -39910.26,
+      "budget_profit_pct": 0.1052,
+      "budget_profit_amount": 15131.99,
+      "gross_profit_amount": -24778.27,
+      "gross_profit_pct": -0.1723,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-022",
+      "job_code": "JEP-2601/001",
+      "offer_no": "DDP-2026000001",
+      "client_name": "บริษัท เจตภัทร คอนสตรัคชั่น แอนด์ ดีไซน์ จำกัด",
+      "project_name": "งานติดตั้งคอนโด The Line Vibe ห้อง549",
+      "description": "งานติดตั้งคอนโด The Line Vibe ห้อง549",
+      "sheet_name": "09 JEP-2601-001",
+      "contract_price": 12000.0,
+      "budget_price": 12800.0,
+      "status": "Completed",
+      "start_date": "2025-10-25",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "ช่างกั้ง",
+          "material_number": 20,
+          "description": "ค่าแรงช่างกั้ง",
+          "text_quo": "",
+          "amount": 4800.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "ช่างเล็ก",
+          "material_number": 20,
+          "description": "ค่าแรงช่างมาช่วยทำผนังสีน้ำเงิน และเก็บรายละเอียด",
+          "text_quo": "",
+          "amount": 2500.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "Thai Wassadu",
+          "material_number": 10,
+          "description": "ค่าของซื้อเพิ่ม ซื้อบันได",
+          "text_quo": "",
+          "amount": 2600.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "Thai Wassadu",
+          "material_number": 10,
+          "description": "ค่าสีซื้อเพิ่มใช้แก้ไขงานทำสี",
+          "text_quo": "",
+          "amount": 2300.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "Shoppy",
+          "material_number": 80,
+          "description": "ค่าซื้อทีวีใหม่ให้ลุกค้า",
+          "text_quo": "",
+          "amount": 8350.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "HMPro",
+          "material_number": 10,
+          "description": "ค่าแปลงทาสี",
+          "text_quo": "",
+          "amount": 500.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าซื้อของและค่าไปทำคอนโดอีกที่หนึ่ง",
+          "text_quo": "",
+          "amount": 450.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "MEGA Home",
+          "material_number": 10,
+          "description": "ค่าซิลิโคน สำหรับเก็บงาน",
+          "text_quo": "",
+          "amount": 300.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าจ้างช่างชุดใหม่มาทำงาน",
+          "text_quo": "",
+          "amount": 12500.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 60,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 4000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 12800.0,
+          "expense": 6150.0,
+          "balance": 6650.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 19800.0,
+          "balance": -19800.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 4000.0,
+          "balance": -4000.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 38300.0,
+      "remaining_budget": -25500.0,
+      "budget_profit_pct": -0.0667,
+      "budget_profit_amount": -800.0,
+      "gross_profit_amount": -26300.0,
+      "gross_profit_pct": -2.1917,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-023",
+      "job_code": "PEK-2500/002",
+      "offer_no": "QTE-DDP-20250007",
+      "client_name": "บริษัท ทีจี คอนโทรล จำกัด",
+      "project_name": "งานติดตั้งพัดลมระบายอากาศ",
+      "description": "เปลี่ยน ACB Big-C Udonthani",
+      "sheet_name": "08 PKE-002 ติดตั้งพัดลมระบายอาก",
+      "contract_price": 163000.0,
+      "budget_price": 149500.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "SCC",
+          "material_number": 10,
+          "description": "สวิสซ์ไฟ",
+          "text_quo": "",
+          "amount": 33.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ฝาหน้าสวิสซ์",
+          "text_quo": "",
+          "amount": 19.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 10,
+          "description": "กล่องพลาสติก",
+          "text_quo": "",
+          "amount": 9.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "",
+          "material_number": 10,
+          "description": "สายไฟ 1.5 Sq.mm.",
+          "text_quo": "",
+          "amount": 60.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ลูกบิดประตู",
+          "text_quo": "",
+          "amount": 476.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ซิลิโคน",
+          "text_quo": "",
+          "amount": 124.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ปืนยิงซิลิโคน",
+          "text_quo": "",
+          "amount": 71.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 10,
+          "description": "รางหลังเต่า",
+          "text_quo": "",
+          "amount": 29.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 10,
+          "description": "น๊อตสกรูต่างๆ",
+          "text_quo": "",
+          "amount": 162.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าจ้างงานช่าง ชัย",
+          "text_quo": "",
+          "amount": 900.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ถุงมือ ตลับเมตร ฉากวัดไม้",
+          "text_quo": "",
+          "amount": 423.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-26",
+          "po": "ต้องเบิก"
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 3000.0,
+          "expense": 983.0,
+          "balance": 2017.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 900.0,
+          "expense": 900.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 500.0,
+          "expense": 923.0,
+          "balance": -423.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 90,
+          "description": "OTHER",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 2806.0,
+      "remaining_budget": 146694.0,
+      "budget_profit_pct": 0.0828,
+      "budget_profit_amount": 13500.0,
+      "gross_profit_amount": 160194.0,
+      "gross_profit_pct": 0.9828,
+      "incentive_share": 40048.5
+    },
+    {
+      "id": "PJ-024",
+      "job_code": "SUT-2500/001",
+      "offer_no": "QTE-DDP-20250026",
+      "client_name": "คุณสุทธิพงษ์",
+      "project_name": "งานบ้านห้วยขวาง",
+      "description": "งานบ้านห้วยขวาง",
+      "sheet_name": "07 SUT-001 บ้านห้วยขวาง",
+      "contract_price": 37500.0,
+      "budget_price": 28290.0,
+      "status": "Completed",
+      "start_date": "2025-10-25",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "SCC",
+          "material_number": 10,
+          "description": "ค่าสายไฟ",
+          "text_quo": "",
+          "amount": 9577.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "HMPro",
+          "material_number": 10,
+          "description": "ค่ากล่องพลาสติ๊ก",
+          "text_quo": "",
+          "amount": 656.93,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-06",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "ค่าน้ำมันรถ",
+          "material_number": 50,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-05",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "HMPro",
+          "material_number": 10,
+          "description": "รางหลังเต่า",
+          "text_quo": "",
+          "amount": 645.55,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-13",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "บริษัท เมืองไฟฟ้า จำกัด",
+          "material_number": 10,
+          "description": "แคมป์ก้ามปู",
+          "text_quo": "",
+          "amount": 283.8,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "บริษัท เมืองไฟฟ้า จำกัด",
+          "material_number": 10,
+          "description": "ท่อขาวและของซื้อเพิ่ม",
+          "text_quo": "",
+          "amount": 2289.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "บริษัท เมืองไฟฟ้า จำกัด",
+          "material_number": 10,
+          "description": "เกลียวปล่อย ปลั๊กคู่ กล่องลอย",
+          "text_quo": "",
+          "amount": 546.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "ไทวัสดุ",
+          "material_number": 10,
+          "description": "ซื้อของเพิ่ม ไทวัสดุ",
+          "text_quo": "",
+          "amount": 250.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "LINE MAN",
+          "material_number": 10,
+          "description": "ค่าส่งของ",
+          "text_quo": "",
+          "amount": 220.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "ค่าจ้างพี่ตุ๋ย",
+          "material_number": 20,
+          "description": "ค่าแรงพี่ตุ๋ย",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-14",
+          "po": "บริษัทจ่าย"
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "ค่าจ้างพี่ตุ๋ย",
+          "material_number": 20,
+          "description": "ค่าห้องพัก",
+          "text_quo": "",
+          "amount": 800.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-01",
+          "po": "บริษัทจ่าย"
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าห้องพักคนงาน",
+          "text_quo": "",
+          "amount": 6700.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-12",
+          "po": "บริษัทจ่าย"
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "ค่าจ้างพี่ตุ๋ย",
+          "material_number": 20,
+          "description": "ค่าแรงเบิกล่วงหน้า",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-15",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าแรงเบิกล่วงหน้า",
+          "text_quo": "",
+          "amount": 1800.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-24",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 17790.0,
+          "expense": 15468.28,
+          "balance": 2321.72
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 9000.0,
+          "expense": 11300.0,
+          "balance": -2300.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 1500.0,
+          "expense": 1000.0,
+          "balance": 500.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 27768.28,
+      "remaining_budget": 521.72,
+      "budget_profit_pct": 0.2456,
+      "budget_profit_amount": 9210.0,
+      "gross_profit_amount": 9731.72,
+      "gross_profit_pct": 0.2595,
+      "incentive_share": 2432.93
+    },
+    {
+      "id": "PJ-025",
+      "job_code": "QMP-2500/001",
+      "offer_no": "QTE-DDP-20250023",
+      "client_name": "บริษัท ควอลิตี้ มีท โปรเซสซิ่ง จำกัด",
+      "project_name": "งานค่าแรงผู้รับเหมา",
+      "description": "งาน PM หม้อแปลง 315kVA",
+      "sheet_name": "06 UNT-001 รพ.ภัทรเวช",
+      "contract_price": 26000.0,
+      "budget_price": 17800.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "A.C.L. Engineering Plus Co., Ltd.",
+          "material_number": 20,
+          "description": "ค่าแรงเดือน 24 - 1 พ.ย.",
+          "text_quo": "",
+          "amount": 50334.4,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท รุ่งเรืองนั่งร้าน แบบเหล็ก จำกัด",
+          "material_number": 10,
+          "description": "เช่านั่งร้าน",
+          "text_quo": "",
+          "amount": 5500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "บริษัท รุ่งเรืองนั่งร้าน แบบเหล็ก จำกัด",
+          "material_number": 10,
+          "description": "ค่านั่งร้านสูญหาย",
+          "text_quo": "",
+          "amount": 10000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-16",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "A.C.L. Engineering Plus Co., Ltd.",
+          "material_number": 20,
+          "description": "ค่าแรงเดือน 2 -15 พ.ย.",
+          "text_quo": "",
+          "amount": 79340.25,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-21",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "ค่าน้ำมันรถ",
+          "material_number": 50,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 600.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-21",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าเสื้อคนงาน",
+          "text_quo": "",
+          "amount": 3400.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 80,
+          "description": "ค่าส่งจดหมาย",
+          "text_quo": "",
+          "amount": 450.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าแรงเดือน พ.ย. 16-30",
+          "text_quo": "",
+          "amount": 102020.88,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าแรงเดือน ธ.ค. 1-16",
+          "text_quo": "",
+          "amount": 98874.75,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-18",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "รายรับจากลูกค้าเดือน 1-15 ธ.ค.",
+          "material_number": 0,
+          "description": "ค่าแรงงานรายวัน ทำงานติดตั้ง",
+          "text_quo": "",
+          "amount": 117500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-01",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "รายรับจากลูกค้าเดือน 24 - 2 ต.ค.",
+          "material_number": 0,
+          "description": "ค่าแรงงานรายวัน ทำงานติดตั้ง",
+          "text_quo": "",
+          "amount": 48000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-01",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 18900.0,
+          "balance": -18900.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 371100.0,
+          "expense": 330570.28,
+          "balance": 40529.72
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 0.0,
+          "expense": 600.0,
+          "balance": -600.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 516020.28,
+      "remaining_budget": -498220.28,
+      "budget_profit_pct": 0.3154,
+      "budget_profit_amount": 8200.0,
+      "gross_profit_amount": -490020.28,
+      "gross_profit_pct": -18.8469,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-026",
+      "job_code": "PEK-2500/002",
+      "offer_no": "QTE-DDP-20250007",
+      "client_name": "บริษัท ทีจี คอนโทรล จำกัด",
+      "project_name": "งาน PM หม้อแปลง 315kVA",
+      "description": "เปลี่ยน ACB Big-C Udonthani",
+      "sheet_name": "05 QMP-001งาน PM 315kVA",
+      "contract_price": 163000.0,
+      "budget_price": 149500.0,
+      "status": "Completed",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "พี่สุ",
+          "material_number": 20,
+          "description": "ค่าแรงพี่สุ",
+          "text_quo": "",
+          "amount": 6000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "ปั้ม Caltex",
+          "material_number": 50,
+          "description": "แก๊สรถยนต์",
+          "text_quo": "",
+          "amount": 607.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-16",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "ปั้ม ปตท.",
+          "material_number": 50,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 460.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-16",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "รถเก๋งฟิล์ม-เฟิร์น",
+          "material_number": 40,
+          "description": "ค่าเช่ารถเดินทางไปทำงาน",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-16",
+          "po": "จ่ายตรงเจ้าของรถ"
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "TOTAL COST",
+          "amount": 18067.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "BALANCE",
+          "amount": 733.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "All BALANCE",
+          "amount": 0.03898936170212766,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "PEK-2500/002",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 90,
+          "description": "OTHER",
+          "budget": 0.0,
+          "expense": 18800.04,
+          "balance": -18800.04
+        }
+      ],
+      "total_actual_expenses": 26867.04,
+      "remaining_budget": 122632.96,
+      "budget_profit_pct": 0.0828,
+      "budget_profit_amount": 13500.0,
+      "gross_profit_amount": 136132.96,
+      "gross_profit_pct": 0.8352,
+      "incentive_share": 34033.24
+    },
+    {
+      "id": "PJ-027",
+      "job_code": "PEK-2500/002",
+      "offer_no": "QTE-DDP-20250007",
+      "client_name": "บริษัท ทีจี คอนโทรล จำกัด",
+      "project_name": "งานติดตั้งตู้ และทำ Tray รสา 1 ชั้น 18 19",
+      "description": "เปลี่ยน ACB Big-C Udonthani",
+      "sheet_name": "04 PKE-001 ติดตั้งลากสาย RASA1",
+      "contract_price": 163000.0,
+      "budget_price": 149500.0,
+      "status": "In Progress",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "SCC",
+          "material_number": 10,
+          "description": "ค่าสายไฟ",
+          "text_quo": "",
+          "amount": 3318.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่า Wireway",
+          "text_quo": "",
+          "amount": 1214.45,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-15",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าที่จอดรถ 1",
+          "text_quo": "",
+          "amount": 280.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-15",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าที่จอดรถ 2",
+          "text_quo": "",
+          "amount": 280.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-15",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าแรงพี่ตุ๋ย",
+          "text_quo": "",
+          "amount": 6780.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-15",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ลาล่ามูฟส่งของ",
+          "text_quo": "",
+          "amount": 181.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-15",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 20,
+          "description": "ค่าจ้างงานแก้ไข",
+          "text_quo": "",
+          "amount": 800.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่า Flex อ่อน ใส่ใต้ตู้",
+          "text_quo": "",
+          "amount": 631.3,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "",
+          "material_number": 90,
+          "description": "จ้างมอสออกแบบโซล่าเซลล์",
+          "text_quo": "",
+          "amount": 2000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าน้ำมัน",
+          "text_quo": "",
+          "amount": 349.4,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าทางด่วน",
+          "text_quo": "",
+          "amount": 60.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าอุปกรณ์สำหรับงานชั้น 18",
+          "text_quo": "",
+          "amount": 1427.5,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "",
+          "material_number": 10,
+          "description": "ค่าอุปกรณ์สำหรับงานชั้น 19",
+          "text_quo": "",
+          "amount": 1527.43,
+          "updated_by": "K.Kowit",
+          "date": "2025-11-18",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าที่จอดรถ",
+          "text_quo": "",
+          "amount": 440.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรงทีมช่าง",
+          "text_quo": "",
+          "amount": 3300.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-17",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 11350.0,
+          "expense": 8118.68,
+          "balance": 3231.32
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 10050.0,
+          "expense": 7761.0,
+          "balance": 2289.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 3000.0,
+          "expense": 4709.4,
+          "balance": -1709.4
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 22589.08,
+      "remaining_budget": 126910.92,
+      "budget_profit_pct": 0.0828,
+      "budget_profit_amount": 13500.0,
+      "gross_profit_amount": 140410.92,
+      "gross_profit_pct": 0.8614,
+      "incentive_share": 35102.73
+    },
+    {
+      "id": "PJ-028",
+      "job_code": "PEK-2500/002",
+      "offer_no": "QTE-DDP-20250007",
+      "client_name": "บริษัท ทีจี คอนโทรล จำกัด",
+      "project_name": "เปลี่ยน ACB Big-C Udonthani",
+      "description": "เปลี่ยน ACB Big-C Udonthani",
+      "sheet_name": "03 TG-002 เปลี่ยน ACB",
+      "contract_price": 163000.0,
+      "budget_price": 149500.0,
+      "status": "Completed",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "FTECH",
+          "material_number": 20,
+          "description": "ค่าแรงรวมงานทดสอบระบบ",
+          "text_quo": "PM371/25",
+          "amount": 110000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าที่พักและโรงแรม",
+          "text_quo": "",
+          "amount": 1780.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าตั๋วเครื่องบิน",
+          "text_quo": "",
+          "amount": 1900.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "",
+          "material_number": 40,
+          "description": "ค่าเช่ารถ",
+          "text_quo": "",
+          "amount": 1500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าแรง 3 วัน",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "",
+          "material_number": 50,
+          "description": "ค่าเดินทางไปสนามบิน ไป-กลับ",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 40,
+          "description": "ค่าน้ำมันรถใช้ในอุดร",
+          "text_quo": "",
+          "amount": 1000.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-11",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "",
+          "material_number": 80,
+          "description": "ค่าส่งเอกสาร",
+          "text_quo": "",
+          "amount": 37.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-12-13",
+          "po": "ต้องเบิก"
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "Pen Ake Energy Saving",
+          "material_number": 90,
+          "description": "ค่าดำเนินการ PEN EAK",
+          "text_quo": "",
+          "amount": 22800.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "TOTAL COST",
+          "amount": 140017.0,
+          "updated_by": "จำนวนเงินหลังหักค่าใช้จ่าย",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "BALANCE",
+          "amount": 9483.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "All BALANCE",
+          "amount": 0.0634314381270903,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 37.0,
+          "balance": -37.0
+        },
+        {
+          "code": 90,
+          "description": "OTHER",
+          "budget": 20000.0,
+          "expense": 172300.06,
+          "balance": -152300.06
+        }
+      ],
+      "total_actual_expenses": 289517.06,
+      "remaining_budget": -140017.06,
+      "budget_profit_pct": 0.0828,
+      "budget_profit_amount": 13500.0,
+      "gross_profit_amount": -126517.06,
+      "gross_profit_pct": -0.7762,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-029",
+      "job_code": "JPP-2500/001",
+      "offer_no": "QTE-DDP-2026000XX",
+      "client_name": "Jatupaspol Co., Ltd.",
+      "project_name": "มาบตาพุต ร้านกาแฟ",
+      "description": "งาน Manday ลากสาย Gulf",
+      "sheet_name": "02 JPP-001 งานชัยนาท",
+      "contract_price": 19000.0,
+      "budget_price": 15000.0,
+      "status": "In Progress",
+      "start_date": "2025-10-01",
+      "expense_items": [
+        {
+          "item_id": "item_13",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "TOTAL COST",
+          "amount": 65000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "BALANCE",
+          "amount": 260000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "All BALANCE",
+          "amount": 0.8,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "JPP-2500/001",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "330000",
+          "material_number": 90,
+          "description": "",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "Code",
+          "material_number": 90,
+          "description": "Description",
+          "text_quo": "Budget",
+          "amount": 0.0,
+          "updated_by": "Balance",
+          "date": "Remark",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "10",
+          "material_number": 90,
+          "description": "MATERIALS",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "20",
+          "material_number": 90,
+          "description": "SUB CONTRACTOR",
+          "text_quo": "325000",
+          "amount": 325000.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "30",
+          "material_number": 90,
+          "description": "HEAVY EQUIPMENT",
+          "text_quo": "",
+          "amount": 0.0,
+          "updated_by": "",
+          "date": "",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE (Salary)",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        }
+      ],
+      "total_actual_expenses": 650000.8,
+      "remaining_budget": -635000.8,
+      "budget_profit_pct": 0.2105,
+      "budget_profit_amount": 4000.0,
+      "gross_profit_amount": -631000.8,
+      "gross_profit_pct": -33.2106,
+      "incentive_share": 0.0
+    },
+    {
+      "id": "PJ-030",
+      "job_code": "PEK-2500/001",
+      "offer_no": "QTE-DDP-20250006",
+      "client_name": "บริษัท  เป็นเอก เอ็นเนอร์จี เซฟวิ่ง  จำกัด",
+      "project_name": "เปลี่ยนหลอดไฟไฮเบย์ CP Warehouse",
+      "description": "เปลี่ยนหลอดไฟไฮเบย์ CP Warehouse",
+      "sheet_name": "01 PEK-001 Pen Eak",
+      "contract_price": 66000.0,
+      "budget_price": 58500.0,
+      "status": "Completed",
+      "start_date": "2025-10-04",
+      "expense_items": [
+        {
+          "item_id": "item_10",
+          "vendor": "บริษัท เอสซีซี เอ็นจิเนียริ่ง จำกัด",
+          "material_number": 10,
+          "description": "สายไฟ VCT3C-1.5 IEC01 2.5",
+          "text_quo": "DU DEE68-01",
+          "amount": 5667.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_11",
+          "vendor": "บริษัท ไทยคิน สตีล (ประเทศไทย) จำกัด",
+          "material_number": 10,
+          "description": "อายโบลต์ โซ่เหล็ก 1/4\"",
+          "text_quo": "QT0038726",
+          "amount": 3600.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_12",
+          "vendor": "บริษัท เอสเอสไอ เทคโนโลยี จำกัด",
+          "material_number": 10,
+          "description": "แคมป์บีม",
+          "text_quo": "",
+          "amount": 8550.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-04",
+          "po": ""
+        },
+        {
+          "item_id": "item_13",
+          "vendor": "บริษัท ซีอาร์ซี ไทยวัสดุ จำกัด",
+          "material_number": 10,
+          "description": "ค่าคอนเนคเตอร์ ท่ออ่อนเหล็ก",
+          "text_quo": "",
+          "amount": 765.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_14",
+          "vendor": "บริษัท ซีอาร์ซี ไทยวัสดุ จำกัด",
+          "material_number": 10,
+          "description": "ท่ออ่อนเหล็ก เคเบิ้ลไท ฮุกสำหรับเซฟตี้เบลต์",
+          "text_quo": "",
+          "amount": 3096.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_15",
+          "vendor": "บริษัท สมาร์ท เบลส์บายส์ จำกัด (สำนักงานใหญ่)",
+          "material_number": 10,
+          "description": "เข็มขัดเซฟตี้ แบบเต็มตัว 2 ชุด",
+          "text_quo": "",
+          "amount": 1819.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_16",
+          "vendor": "ค่าน้ำมันรถ",
+          "material_number": 90,
+          "description": "แก๊ส LPG",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 365.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_17",
+          "vendor": "ค่าน้ำมันรถ",
+          "material_number": 90,
+          "description": "แก๊ส LPG",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 392.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_18",
+          "vendor": "ค่าน้ำมันรถ",
+          "material_number": 90,
+          "description": "แก๊ส LPG",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 380.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-07",
+          "po": ""
+        },
+        {
+          "item_id": "item_19",
+          "vendor": "ค่าของ",
+          "material_number": 10,
+          "description": "ค่าของงานหลอดไฟ T8",
+          "text_quo": "",
+          "amount": 1568.64,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-08",
+          "po": ""
+        },
+        {
+          "item_id": "item_20",
+          "vendor": "ค่าขนส่ง",
+          "material_number": 90,
+          "description": "ค่าขนส่ง ลาล่ามูฟ",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 300.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-08",
+          "po": ""
+        },
+        {
+          "item_id": "item_21",
+          "vendor": "ค่าแรงช่างขอเพิ่ม",
+          "material_number": 20,
+          "description": "ค่าแรงงานติตดั้ง",
+          "text_quo": "",
+          "amount": 2500.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-08",
+          "po": ""
+        },
+        {
+          "item_id": "item_22",
+          "vendor": "ค่าจ้างแรงงานช่างอาร์ม",
+          "material_number": 20,
+          "description": "ค่าแรงงานติตดั้ง",
+          "text_quo": "",
+          "amount": 32300.0,
+          "updated_by": "K.Kowit",
+          "date": "จ่ายแล้ว 3300+5000",
+          "po": ""
+        },
+        {
+          "item_id": "item_23",
+          "vendor": "ค่าทางด่วน",
+          "material_number": 50,
+          "description": "ค่าทางด่วน",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 350.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-10",
+          "po": ""
+        },
+        {
+          "item_id": "item_24",
+          "vendor": "ค่าขนส่ง",
+          "material_number": 90,
+          "description": "ค่าขนส่ง ลาล่ามูฟ",
+          "text_quo": "ต้องทำเบิก",
+          "amount": 506.0,
+          "updated_by": "K.Kowit",
+          "date": "2025-10-10",
+          "po": ""
+        }
+      ],
+      "budget_categories": [
+        {
+          "code": 10,
+          "description": "MATERIALS",
+          "budget": 23000.0,
+          "expense": 25065.64,
+          "balance": -2065.64
+        },
+        {
+          "code": 20,
+          "description": "SUB CONTRACTOR",
+          "budget": 33000.0,
+          "expense": 34800.0,
+          "balance": -1800.0
+        },
+        {
+          "code": 30,
+          "description": "HEAVY EQUIPMENT",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 40,
+          "description": "RENTAL",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 50,
+          "description": "STAFF EXPENSE",
+          "budget": 2500.0,
+          "expense": 350.0,
+          "balance": 2150.0
+        },
+        {
+          "code": 60,
+          "description": "OFFICE EXPENSE",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 70,
+          "description": "ENTERTAIN",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 80,
+          "description": "MISCELLANEOUS",
+          "budget": 0.0,
+          "expense": 0.0,
+          "balance": 0.0
+        },
+        {
+          "code": 90,
+          "description": "OTHER",
+          "budget": 0.0,
+          "expense": 1943.0,
+          "balance": -1943.0
+        }
+      ],
+      "total_actual_expenses": 62158.64,
+      "remaining_budget": -3658.64,
+      "budget_profit_pct": 0.1136,
+      "budget_profit_amount": 7500.0,
+      "gross_profit_amount": 3841.36,
+      "gross_profit_pct": 0.0582,
+      "incentive_share": 960.34
+    }
+  ],
+  "forecasts": [
+    {
+      "id": 2,
+      "title": "เงินสดย่อย",
+      "date": "2026-05-10",
+      "month_1": 15000.0,
+      "month_2": 20000.0,
+      "month_3": 0.0,
+      "month_4": 0.0,
+      "total": 35000.0
+    },
+    {
+      "id": 3,
+      "title": "เบิกเงินงานสระบุรี",
+      "date": "2026-05-15",
+      "month_1": 90164.83,
+      "month_2": 0.0,
+      "month_3": 0.0,
+      "month_4": 0.0,
+      "total": 90164.83
+    },
+    {
+      "id": 9,
+      "title": "เงินเบิกเมเดนชา",
+      "date": "2026-06-19",
+      "month_1": 20000.0,
+      "month_2": 36000.0,
+      "month_3": 12795.0,
+      "month_4": 0.0,
+      "total": 68795.0
+    }
+  ],
+  "last_updated": "2026-07-20T10:17:56.289303"
+}
