@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         projects: [],
         dashboardData: null,
         currentProject: null,
-        charts: {}
+        charts: {},
+        user: null
     };
 
     // DOM Elements
@@ -85,6 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.navBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             const targetTab = btn.getAttribute("data-tab");
+            
+            // Viewer restricted tab check
+            if (targetTab === "formulas-tab" && state.user && state.user.role === "viewer") {
+                alert("คุณไม่มีสิทธิ์เข้าใช้งาน Formulas Sandbox");
+                return;
+            }
+
             elements.navBtns.forEach(b => b.classList.remove("active"));
             elements.tabContents.forEach(t => t.classList.remove("active"));
             
@@ -100,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 2. Dashboard Loader ---
     async function loadDashboard() {
         try {
-            const res = await fetch("/api/dashboard");
+            const res = await securedFetch("/api/dashboard");
             const data = await res.json();
             if (!data.success) return;
 
@@ -224,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (client) params.append("client", client);
 
         try {
-            const res = await fetch(`/api/projects?${params.toString()}`);
+            const res = await securedFetch(`/api/projects?${params.toString()}`);
             const data = await res.json();
             if (!data.success) return;
 
@@ -253,6 +261,34 @@ document.addEventListener("DOMContentLoaded", () => {
             const stClass = p.status === "Completed" ? "completed" : "in-progress";
             const profitClass = (p.gross_profit_pct || 0) >= 0.2 ? "profit-high" : "profit-low";
 
+            // Role-based actions
+            let actionButtons = '';
+            if (state.user && state.user.role === 'viewer') {
+                // Viewer sees View icon
+                actionButtons = `
+                    <button class="btn btn-secondary btn-sm btn-edit-pj" data-id="${p.id}" title="ดูรายละเอียดโครงการ">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                `;
+            } else if (state.user && state.user.role === 'editor') {
+                // Editor sees Edit icon but cannot delete
+                actionButtons = `
+                    <button class="btn btn-secondary btn-sm btn-edit-pj" data-id="${p.id}" title="แก้ไขบันทึกค่าใช้จ่าย">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                `;
+            } else {
+                // Admin sees Edit and Delete
+                actionButtons = `
+                    <button class="btn btn-secondary btn-sm btn-edit-pj" data-id="${p.id}" title="Edit Project">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm btn-del-pj" data-id="${p.id}" title="Delete Project">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                `;
+            }
+
             return `
                 <tr>
                     <td><strong>${p.job_code}</strong></td>
@@ -267,12 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td><span class="status-badge ${profitClass}">${formatPercent(p.gross_profit_pct)}</span></td>
                     <td><span class="status-badge ${stClass}">${p.status}</span></td>
                     <td class="text-right">
-                        <button class="btn btn-secondary btn-sm btn-edit-pj" data-id="${p.id}" title="Edit Project">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </button>
-                        <button class="btn btn-danger btn-sm btn-del-pj" data-id="${p.id}" title="Delete Project">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
+                        ${actionButtons}
                     </td>
                 </tr>
             `;
@@ -296,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 4. Money Forecast Loader ---
     async function loadForecasts() {
         try {
-            const res = await fetch("/api/dashboard");
+            const res = await securedFetch("/api/dashboard");
             const data = await res.json();
             if (!data.success) return;
 
@@ -321,18 +352,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 5. Project CRUD & Modals ---
     async function openProjectModal(projectId = null) {
         if (state.categories.length === 0) {
-            const catRes = await fetch("/api/categories");
-            const catData = await catRes.json();
-            state.categories = catData.categories || [];
+            try {
+                const catRes = await securedFetch("/api/categories");
+                const catData = await catRes.json();
+                state.categories = catData.categories || [];
+            } catch (e) { return; }
         }
 
         if (projectId) {
-            const res = await fetch(`/api/projects/${projectId}`);
-            const data = await res.json();
-            if (data.success) {
-                state.currentProject = data.project;
-                fillProjectForm(data.project);
-            }
+            try {
+                const res = await securedFetch(`/api/projects/${projectId}`);
+                const data = await res.json();
+                if (data.success) {
+                    state.currentProject = data.project;
+                    fillProjectForm(data.project);
+                }
+            } catch (e) { return; }
         } else {
             state.currentProject = {
                 id: "",
@@ -372,15 +407,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
         renderModalCategories(pj.budget_categories || []);
         renderModalItems(pj.expense_items || []);
+        
+        // Protect fields based on user role
+        const isViewer = state.user && state.user.role === 'viewer';
+        const isEditor = state.user && state.user.role === 'editor';
+        
+        // Project core inputs
+        const coreInputs = [
+            "form-job-code", "form-offer-no", "form-status",
+            "form-client-name", "form-project-name",
+            "form-contract-price", "form-budget-price", "form-description"
+        ];
+        
+        coreInputs.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.disabled = (isViewer || isEditor);
+        });
+
+        // Save project button in modal footer
+        const saveProjectBtn = elements.projectForm.querySelector('button[type="submit"]');
+        if (saveProjectBtn) {
+            saveProjectBtn.style.display = (isViewer || isEditor) ? "none" : "inline-flex";
+        }
+
+        // Add expense button
+        if (elements.btnAddItem) {
+            elements.btnAddItem.style.display = isViewer ? "none" : "inline-flex";
+        }
     }
 
     function renderModalCategories(categories) {
+        const isViewer = state.user && state.user.role === 'viewer';
+        const isEditor = state.user && state.user.role === 'editor';
+        const disableInput = (isViewer || isEditor) ? 'disabled' : '';
+
         elements.modalCategoryTbody.innerHTML = categories.map(c => `
             <tr>
                 <td><strong>${c.code}</strong></td>
                 <td>${c.description}</td>
                 <td>
-                    <input type="number" step="0.01" class="form-control form-control-sm cat-budget-input" data-code="${c.code}" value="${c.budget || 0}">
+                    <input type="number" step="0.01" class="form-control form-control-sm cat-budget-input" data-code="${c.code}" value="${c.budget || 0}" ${disableInput}>
                 </td>
                 <td>${formatCurrency(c.expense)}</td>
                 <td><strong class="${(c.balance || 0) < 0 ? 'text-danger' : 'text-success'}">${formatCurrency(c.balance)}</strong></td>
@@ -394,21 +460,32 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        elements.modalItemsTbody.innerHTML = items.map(it => `
-            <tr>
-                <td>${it.date || "-"}</td>
-                <td>${it.vendor || "-"}</td>
-                <td><span class="status-badge in-progress">${it.material_number}</span></td>
-                <td>${it.description || "-"}</td>
-                <td><strong>${formatCurrency(it.amount)}</strong></td>
-                <td>${it.updated_by || "-"}</td>
-                <td class="text-right">
-                    <button type="button" class="btn btn-danger btn-sm btn-del-item" data-item-id="${it.item_id}">
+        const isViewer = state.user && state.user.role === 'viewer';
+
+        elements.modalItemsTbody.innerHTML = items.map(it => {
+            let deleteCol = '';
+            if (!isViewer) {
+                deleteCol = `
+                    <button type="button" class="btn btn-danger btn-sm btn-del-item" data-item-id="${it.item_id}" title="ลบรายการค่าใช้จ่าย">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
-                </td>
-            </tr>
-        `).join("");
+                `;
+            }
+            
+            return `
+                <tr>
+                    <td>${it.date || "-"}</td>
+                    <td>${it.vendor || "-"}</td>
+                    <td><span class="status-badge in-progress">${it.material_number}</span></td>
+                    <td>${it.description || "-"}</td>
+                    <td><strong>${formatCurrency(it.amount)}</strong></td>
+                    <td>${it.updated_by || "-"}</td>
+                    <td class="text-right">
+                        ${deleteCol}
+                    </td>
+                </tr>
+            `;
+        }).join("");
 
         document.querySelectorAll(".btn-del-item").forEach(b => {
             b.addEventListener("click", () => deleteExpenseItem(b.getAttribute("data-item-id")));
@@ -448,7 +525,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const method = pjId ? "PUT" : "POST";
 
         try {
-            const res = await fetch(url, {
+            const res = await securedFetch(url, {
                 method: method,
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -467,7 +544,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function deleteProject(projectId) {
         if (!confirm("Are you sure you want to delete this project?")) return;
         try {
-            const res = await fetch(`/api/projects/${projectId}`, { method: "DELETE" });
+            const res = await securedFetch(`/api/projects/${projectId}`, { method: "DELETE" });
             const data = await res.json();
             if (data.success) {
                 loadProjects();
@@ -513,7 +590,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const res = await fetch(`/api/projects/${projectId}/items`, {
+            const res = await securedFetch(`/api/projects/${projectId}/items`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -535,7 +612,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const projectId = state.currentProject.id;
 
         try {
-            const res = await fetch(`/api/projects/${projectId}/items/${itemId}`, { method: "DELETE" });
+            const res = await securedFetch(`/api/projects/${projectId}/items/${itemId}`, { method: "DELETE" });
             const data = await res.json();
             if (data.success) {
                 state.currentProject = data.project;
@@ -596,7 +673,7 @@ const incentiveShare = CostEngine.calculateIncentiveShare(${grossProfit}, ${rate
     // Sync Excel Action
     elements.btnSyncExcel.addEventListener("click", async () => {
         try {
-            const res = await fetch("/api/reload-excel", { method: "POST" });
+            const res = await securedFetch("/api/reload-excel", { method: "POST" });
             const data = await res.json();
             if (data.success) {
                 alert(`Successfully re-synced data from Excel! Total ${data.count} projects reloaded.`);
@@ -608,7 +685,157 @@ const incentiveShare = CostEngine.calculateIncentiveShare(${grossProfit}, ${rate
         }
     });
 
+    // --- Authentication & Role Restrictions Logic ---
+    const loginForm = document.getElementById("login-form");
+    const loginUsername = document.getElementById("login-username");
+    const loginPassword = document.getElementById("login-password");
+    const loginError = document.getElementById("login-error-message");
+    const userBadgeContainer = document.getElementById("user-badge-container");
+    const userDisplayName = document.getElementById("user-display-name");
+    const userRoleTag = document.getElementById("user-role-tag");
+    const btnLogout = document.getElementById("btn-logout");
+
+    // securedFetch wrapper to handle authorization errors globally
+    async function securedFetch(url, options = {}) {
+        try {
+            const res = await fetch(url, options);
+            if (res.status === 401) {
+                showLoginScreen();
+                throw new Error("Unauthorized - session expired");
+            }
+            if (res.status === 403) {
+                alert("คุณไม่มีสิทธิ์ดำเนินการในส่วนนี้ (Forbidden)");
+                throw new Error("Forbidden - insufficient permissions");
+            }
+            return res;
+        } catch (err) {
+            console.error(`Fetch error for ${url}:`, err);
+            throw err;
+        }
+    }
+
+    async function checkAuth() {
+        try {
+            const res = await fetch("/api/me");
+            if (res.status === 401) {
+                showLoginScreen();
+                return;
+            }
+            const data = await res.json();
+            if (data.success) {
+                state.user = data.user;
+                document.body.classList.add("logged-in");
+                
+                // Show user badge
+                userBadgeContainer.style.display = "flex";
+                userDisplayName.textContent = state.user.name;
+                userRoleTag.textContent = state.user.role.toUpperCase();
+                userRoleTag.className = `role-tag ${state.user.role}`;
+                
+                // Apply global role-based UI visibility
+                applyGlobalRoleRestrictions();
+                
+                // Load active tab data
+                const activeBtn = document.querySelector(".nav-btn.active");
+                const activeTab = activeBtn ? activeBtn.getAttribute("data-tab") : "dashboard-tab";
+                if (activeTab === "dashboard-tab") loadDashboard();
+                if (activeTab === "projects-tab") loadProjects();
+                if (activeTab === "forecast-tab") loadForecasts();
+            } else {
+                showLoginScreen();
+            }
+        } catch (err) {
+            console.error("Auth check failed:", err);
+            showLoginScreen();
+        }
+    }
+
+    function showLoginScreen() {
+        state.user = null;
+        document.body.classList.remove("logged-in");
+        userBadgeContainer.style.display = "none";
+        if (loginError) loginError.style.display = "none";
+        if (loginPassword) loginPassword.value = "";
+    }
+
+    function applyGlobalRoleRestrictions() {
+        if (!state.user) return;
+        
+        const syncExcelBtn = document.getElementById("btn-sync-excel");
+        const newProjectBtn = document.getElementById("btn-new-project");
+        const sandboxTabBtn = document.querySelector('[data-tab="formulas-tab"]');
+        
+        if (state.user.role === "admin") {
+            if (syncExcelBtn) syncExcelBtn.style.display = "inline-flex";
+            if (newProjectBtn) newProjectBtn.style.display = "inline-flex";
+            if (sandboxTabBtn) sandboxTabBtn.style.display = "flex";
+        } else if (state.user.role === "editor") {
+            if (syncExcelBtn) syncExcelBtn.style.display = "none";
+            if (newProjectBtn) newProjectBtn.style.display = "none";
+            if (sandboxTabBtn) sandboxTabBtn.style.display = "flex";
+        } else if (state.user.role === "viewer") {
+            if (syncExcelBtn) syncExcelBtn.style.display = "none";
+            if (newProjectBtn) newProjectBtn.style.display = "none";
+            if (sandboxTabBtn) sandboxTabBtn.style.display = "none";
+            
+            // If currently on formulas tab, switch to dashboard
+            const activeBtn = document.querySelector(".nav-btn.active");
+            if (activeBtn && activeBtn.getAttribute("data-tab") === "formulas-tab") {
+                const dashboardBtn = document.querySelector('[data-tab="dashboard-tab"]');
+                if (dashboardBtn) dashboardBtn.click();
+            }
+        }
+    }
+
+    // Login Form Submit
+    if (loginForm) {
+        loginForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const username = loginUsername.value.trim();
+            const password = loginPassword.value;
+            
+            try {
+                const res = await fetch("/api/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await res.json();
+                if (res.status === 200 && data.success) {
+                    loginUsername.value = "";
+                    loginPassword.value = "";
+                    if (loginError) loginError.style.display = "none";
+                    checkAuth();
+                } else {
+                    if (loginError) {
+                        loginError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> ${data.message || 'Login failed'}`;
+                        loginError.style.display = "flex";
+                    }
+                }
+            } catch (err) {
+                console.error("Login request failed:", err);
+                if (loginError) {
+                    loginError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> เกิดข้อผิดพลาดในการเชื่อมต่อเซิร์ฟเวอร์`;
+                    loginError.style.display = "flex";
+                }
+            }
+        });
+    }
+
+    // Logout Action
+    if (btnLogout) {
+        btnLogout.addEventListener("click", async () => {
+            try {
+                await fetch("/api/logout", { method: "POST" });
+                showLoginScreen();
+            } catch (err) {
+                console.error("Logout failed:", err);
+                showLoginScreen();
+            }
+        });
+    }
+
     // Initial App Load
-    loadDashboard();
+    checkAuth();
     runFormulaSandbox();
 });

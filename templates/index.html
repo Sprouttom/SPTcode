@@ -41,6 +41,14 @@
             </nav>
 
             <div class="header-actions">
+                <div class="user-badge" id="user-badge-container" style="display: none;">
+                    <i class="fa-solid fa-user-circle"></i>
+                    <span id="user-display-name">-</span>
+                    <span class="role-tag" id="user-role-tag">-</span>
+                    <button class="btn-logout" id="btn-logout" title="Logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
                 <button class="btn btn-secondary btn-sm" id="btn-sync-excel" title="Reload from Excel file">
                     <i class="fa-solid fa-rotate"></i> Sync Excel
                 </button>
@@ -449,6 +457,34 @@ function calculateGrossProfit(contractPrice, actualExpense) {
                         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Save Item</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="brand-icon"><i class="fa-solid fa-calculator"></i></div>
+                <h2>PJ Cost Record</h2>
+                <p>Sign in to access project financial logs</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group" style="text-align: left;">
+                    <label for="login-username"><i class="fa-solid fa-user"></i> Username</label>
+                    <input type="text" id="login-username" required class="form-control" placeholder="Enter username (e.g. admin)">
+                </div>
+                <div class="form-group" style="text-align: left;">
+                    <label for="login-password"><i class="fa-solid fa-lock"></i> Password</label>
+                    <input type="password" id="login-password" required class="form-control" placeholder="Enter password">
+                </div>
+                <div id="login-error-message" class="error-text" style="display: none;"></div>
+                <button type="submit" class="btn btn-primary w-100 mt-3">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
+            </form>
+            <div class="login-footer">
+                <span>Accounts: <strong>admin</strong> (admin123), <strong>editor</strong> (editor123), <strong>viewer</strong> (viewer123)</span>
             </div>
         </div>
     </div>

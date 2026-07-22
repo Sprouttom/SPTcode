@@ -4,22 +4,92 @@ Serves RESTful APIs for Dashboard statistics, Projects CRUD, Expense items manag
 Category definitions, Cashflow forecasts, and Formula Engine calculations.
 """
 
-from flask import Flask, render_template, jsonify, request
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from flask import Flask, render_template, jsonify, request, session
+from functools import wraps
+from werkzeug.security import generate_password_hash, check_password_hash
 import data_manager
 from cost_engine import calculate_project_metrics
 
+
 app = Flask(__name__, template_folder="templates", static_folder="static")
+app.secret_key = "spt-cost-record-secret-key-12345"
+
+# User Credentials Database
+USERS = {
+    "admin": {
+        "password": generate_password_hash("admin123"),
+        "role": "admin",
+        "name": "System Admin (Kowit)"
+    },
+    "editor": {
+        "password": generate_password_hash("editor123"),
+        "role": "editor",
+        "name": "Project Manager (Pongs)"
+    },
+    "viewer": {
+        "password": generate_password_hash("viewer123"),
+        "role": "viewer",
+        "name": "Financial Viewer"
+    }
+}
+
+# Decorator to secure endpoints with roles
+def require_auth(roles=None):
+    def decorator(f):
+        @wraps(f)
+        def decorated_function(*args, **kwargs):
+            if "user" not in session:
+                return jsonify({"success": False, "message": "Unauthorized"}), 401
+            if roles and session["user"].get("role") not in roles:
+                return jsonify({"success": False, "message": "Forbidden"}), 403
+            return f(*args, **kwargs)
+        return decorated_function
+    return decorator
+
+# Authentication APIs
+@app.route("/api/login", methods=["POST"])
+def login():
+    data = request.json or {}
+    username = data.get("username", "").strip().lower()
+    password = data.get("password", "")
+    
+    user = USERS.get(username)
+    if user and check_password_hash(user["password"], password):
+        session["user"] = {
+            "username": username,
+            "role": user["role"],
+            "name": user["name"]
+        }
+        return jsonify({"success": True, "user": session["user"]})
+    return jsonify({"success": False, "message": "ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง"}), 401
+
+@app.route("/api/logout", methods=["POST"])
+def logout():
+    session.pop("user", None)
+    return jsonify({"success": True, "message": "ออกจากระบบเรียบร้อยแล้ว"})
+
+@app.route("/api/me", methods=["GET"])
+def get_me():
+    if "user" not in session:
+        return jsonify({"success": False, "message": "ยังไม่ได้เข้าสู่ระบบ"}), 401
+    return jsonify({"success": True, "user": session["user"]})
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route("/api/categories", methods=["GET"])
+@require_auth(["admin", "editor", "viewer"])
 def get_categories():
     db = data_manager.get_db()
     return jsonify({"success": True, "categories": db.get("categories", [])})
 
 @app.route("/api/dashboard", methods=["GET"])
+@require_auth(["admin", "editor", "viewer"])
 def get_dashboard():
     db = data_manager.get_db()
     projects = db.get("projects", [])
@@ -77,6 +147,7 @@ def get_dashboard():
     })
 
 @app.route("/api/projects", methods=["GET"])
+@require_auth(["admin", "editor", "viewer"])
 def get_projects():
     db = data_manager.get_db()
     projects = db.get("projects", [])
@@ -106,6 +177,7 @@ def get_projects():
     return jsonify({"success": True, "count": len(filtered), "projects": filtered})
 
 @app.route("/api/projects/<project_id>", methods=["GET"])
+@require_auth(["admin", "editor", "viewer"])
 def get_project_detail(project_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -113,6 +185,7 @@ def get_project_detail(project_id):
     return jsonify({"success": True, "project": pj})
 
 @app.route("/api/projects", methods=["POST"])
+@require_auth(["admin"])
 def create_project():
     data = request.json or {}
     if not data.get("project_name") or not data.get("job_code"):
@@ -143,6 +216,7 @@ def create_project():
     return jsonify({"success": True, "message": "Project created successfully", "project": saved}), 201
 
 @app.route("/api/projects/<project_id>", methods=["PUT"])
+@require_auth(["admin"])
 def update_project(project_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -166,6 +240,7 @@ def update_project(project_id):
     return jsonify({"success": True, "message": "Project updated successfully", "project": saved})
 
 @app.route("/api/projects/<project_id>", methods=["DELETE"])
+@require_auth(["admin"])
 def delete_project_route(project_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -175,6 +250,7 @@ def delete_project_route(project_id):
     return jsonify({"success": True, "message": "Project deleted successfully"})
 
 @app.route("/api/projects/<project_id>/items", methods=["POST"])
+@require_auth(["admin", "editor"])
 def add_expense_item(project_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -200,6 +276,7 @@ def add_expense_item(project_id):
     return jsonify({"success": True, "message": "Expense item added", "project": saved}), 201
 
 @app.route("/api/projects/<project_id>/items/<item_id>", methods=["PUT"])
+@require_auth(["admin", "editor"])
 def update_expense_item(project_id, item_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -230,6 +307,7 @@ def update_expense_item(project_id, item_id):
     return jsonify({"success": True, "message": "Expense item updated", "project": saved})
 
 @app.route("/api/projects/<project_id>/items/<item_id>", methods=["DELETE"])
+@require_auth(["admin", "editor"])
 def delete_expense_item(project_id, item_id):
     pj = data_manager.get_project_by_id(project_id)
     if not pj:
@@ -241,6 +319,7 @@ def delete_expense_item(project_id, item_id):
     return jsonify({"success": True, "message": "Expense item deleted", "project": saved})
 
 @app.route("/api/reload-excel", methods=["POST"])
+@require_auth(["admin"])
 def reload_excel():
     db = data_manager.parse_excel_to_db()
     return jsonify({"success": True, "message": "Reloaded data from Excel workbook", "count": len(db.get("projects", []))})
